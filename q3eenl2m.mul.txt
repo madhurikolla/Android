@@ -1,0 +1,63 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   HelloWorld/.idea/misc.xml
+#	modified:   HelloWorld01/.idea/misc.xml
+#	modified:   HelloWorld01/app/src/main/AndroidManifest.xml
+#	modified:   HelloWorld01/app/src/main/java/com/example/kittumadhu/helloworld01/MainActivity.java
+#	new file:   HelloWorld01/app/src/main/res/drawable/icon.png
+#	modified:   HelloWorld01/app/src/main/res/layout/activity_main.xml
+#	modified:   HelloWorld01/app/src/main/res/layout/content_main.xml
+#	modified:   HelloWorld01/app/src/main/res/values/strings.xml
+#	new file:   HomeWork02/.gitignore
+#	new file:   HomeWork02/.idea/.name
+#	new file:   HomeWork02/.idea/compiler.xml
+#	new file:   HomeWork02/.idea/copyright/profiles_settings.xml
+#	new file:   HomeWork02/.idea/encodings.xml
+#	new file:   HomeWork02/.idea/gradle.xml
+#	new file:   HomeWork02/.idea/misc.xml
+#	new file:   HomeWork02/.idea/modules.xml
+#	new file:   HomeWork02/.idea/runConfigurations.xml
+#	new file:   HomeWork02/.idea/vcs.xml
+#	new file:   HomeWork02/HomeWork02.iml
+#	new file:   HomeWork02/app/.gitignore
+#	new file:   HomeWork02/app/app.iml
+#	new file:   HomeWork02/app/build.gradle
+#	new file:   HomeWork02/app/proguard-rules.pro
+#	new file:   HomeWork02/app/src/androidTest/java/com/example/kittumadhu/homework02/ApplicationTest.java
+#	new file:   HomeWork02/app/src/main/AndroidManifest.xml
+#	new file:   HomeWork02/app/src/main/java/com/example/kittumadhu/homework02/MainActivity.java
+#	new file:   HomeWork02/app/src/main/java/com/example/kittumadhu/homework02/SecondActivity.java
+#	new file:   HomeWork02/app/src/main/res/drawable/icon.png
+#	new file:   HomeWork02/app/src/main/res/layout/activity_main.xml
+#	new file:   HomeWork02/app/src/main/res/layout/activity_second.xml
+#	new file:   HomeWork02/app/src/main/res/layout/content_main.xml
+#	new file:   HomeWork02/app/src/main/res/menu/menu_main.xml
+#	new file:   HomeWork02/app/src/main/res/mipmap-hdpi/ic_launcher.png
+#	new file:   HomeWork02/app/src/main/res/mipmap-mdpi/ic_launcher.png
+#	new file:   HomeWork02/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+#	new file:   HomeWork02/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+#	new file:   HomeWork02/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+#	new file:   HomeWork02/app/src/main/res/values-v21/styles.xml
+#	new file:   HomeWork02/app/src/main/res/values-w820dp/dimens.xml
+#	new file:   HomeWork02/app/src/main/res/values/colors.xml
+#	new file:   HomeWork02/app/src/main/res/values/dimens.xml
+#	new file:   HomeWork02/app/src/main/res/values/strings.xml
+#	new file:   HomeWork02/app/src/main/res/values/styles.xml
+#	new file:   HomeWork02/app/src/test/java/com/example/kittumadhu/homework02/ExampleUnitTest.java
+#	new file:   HomeWork02/build.gradle
+#	new file:   HomeWork02/gradle.properties
+#	new file:   HomeWork02/gradle/wrapper/gradle-wrapper.jar
+#	new file:   HomeWork02/gradle/wrapper/gradle-wrapper.properties
+#	new file:   HomeWork02/gradlew
+#	new file:   HomeWork02/gradlew.bat
+#	new file:   HomeWork02/settings.gradle
+#
+# Changes not staged for commit:
+#	deleted:    HelloWorld01/app/src/main/res/drawable/TalapusandOlallielakes.jpg
+#
+
