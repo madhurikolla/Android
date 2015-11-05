@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
     tools:context="com.example.kittumadhu.homework02.MainActivity">
@@ -19,74 +21,86 @@
            android:layout_alignParentLeft="true"
            android:layout_alignParentStart="true" />
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="fill_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:id="@+id/linearLayout"-->
-        <!--android:layout_below="@+id/user_name"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!-->-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/user_name"
+        android:id="@+id/dark_grayline"
+        android:paddingBottom="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Region"
+        android:id="@+id/region"
+        android:layout_below="@id/dark_grayline"/>
 
 
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Region"
-            android:id="@+id/region"
-            android:layout_below="@id/user_name"/>
 
-
-    <!--</LinearLayout>-->
 
     <RadioGroup
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+       android:orientation="horizontal"
         android:layout_below="@+id/region"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/radio_buttons">
+        android:id="@+id/radio_buttons"
+        android:weightSum="1">
 
-     <RadioButton
 
+        <RadioButton
          android:id="@+id/radio_button"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:text="US"
          android:onClick="onRadioButtonClicked"
-
         />
 
-     <RadioButton android:id="@+id/radio_button2"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="Canada"
-         android:onClick="onRadioButtonClicked"
-         />
-
+        <RadioButton android:id="@+id/radio_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Canada"
+            android:onClick="onRadioButtonClicked"
+            />
 
     </RadioGroup>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/radio_buttons"
+        android:id="@+id/dark_grayline2"
+        android:paddingBottom="2dp"/>
 
     <Switch
         android:id="@+id/age_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textOn="18 or over"
         android:textOff="under 18"
+        android:textOn="18 or over"
         android:checked="true"
-        android:layout_below="@+id/radio_buttons"/>
-
+        android:layout_below="@+id/dark_grayline2"
+        />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/age_button"
+    >
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ok_button"
         android:layout_below="@+id/age_button"
-        android:text="OK"/>
+        android:text="OK"
+        android:layout_weight="0.3"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -94,12 +108,11 @@
         android:text="CANCEL"
         android:layout_alignTop="@+id/ok_button"
         android:layout_toRightOf="@+id/ok_button"
-        android:layout_toEndOf="@+id/ok_button" />
+        android:layout_toEndOf="@+id/ok_button"
+        android:layout_weight="0.3"/>
 
-
-
-
-</RelativeLayout>
+</LinearLayout>
+</LinearLayout>
 
 
 

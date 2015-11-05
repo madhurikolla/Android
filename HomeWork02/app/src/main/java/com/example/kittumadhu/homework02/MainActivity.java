@@ -1,6 +1,7 @@
 package com.example.kittumadhu.homework02;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
@@ -41,14 +42,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         Switch toggle = (Switch)findViewById(R.id.age_button);
-      ;
+
+        final Button button=(Button)findViewById(R.id.ok_button);
+
+        SharedPreferences sharedPrefs = getSharedPreferences("com.example.kittumadhu.homework02", MODE_PRIVATE);
+        toggle.setChecked(sharedPrefs.getBoolean("age_button", false));
+
+        button.setEnabled(false);
 
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-
-                Button button=(Button)findViewById(R.id.ok_button);
-
                 if (isChecked) {
                     Toast.makeText(MainActivity.this,"over 18",Toast.LENGTH_LONG).show();
                     button.setEnabled(true);
@@ -99,20 +103,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this, "onclick", Toast.LENGTH_SHORT).show();
     }
 
-    public void onLaunchSecondActivity(View v){
-        Toast.makeText(MainActivity.this,"onLaunchSecondActivity",Toast.LENGTH_LONG).show();
 
-        Intent mySecondActivity=new Intent(MainActivity.this,SecondActivity.class);
-
-        Bundle b= new Bundle();
-        b.putString("Name","Dave");
-        b.putInt("Age",22);
-
-        mySecondActivity.putExtras(b);
-        startActivity(mySecondActivity);
-
-
-    }
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
